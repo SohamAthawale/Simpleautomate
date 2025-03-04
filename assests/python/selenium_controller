@@ -1,0 +1,23 @@
+import sys
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")  # Remove this line if you want to see the browser
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-gpu")
+
+service = Service("assets/python/chromedriver")  # Ensure correct path
+driver = webdriver.Chrome(service=service, options=chrome_options)
+
+def open_website(url):
+    driver.get(url)
+    return f"Opened {url}"
+
+if __name__ == "__main__":
+    command = sys.argv[1]
+    
+    if command == "open":
+        url = sys.argv[2]
+        print(open_website(url))
