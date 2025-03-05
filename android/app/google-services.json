@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "82529936747",
+    "project_id": "simple-automate",
+    "storage_bucket": "simple-automate.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82529936747:android:d2f5f117950ea44d46582e",
+        "android_client_info": {
+          "package_name": "com.example.simpleautomate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWBSRl7gBgPcxrepWkVk0HWIw_yFT6Q1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
